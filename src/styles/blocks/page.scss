@@ -2,19 +2,21 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
+  margin: $value-zero;
+  padding: $value-zero;
+  border: $value-zero;
 }
 
-html {
+html,
+body {
   font-family: Roboto, sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: $card-font-weight-default;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-}
 
-body {
-  margin: 0;
+  height: $value-100;
+  min-width: 320px;
+  line-height: $value-1;
+  margin: $value-zero;
 }
